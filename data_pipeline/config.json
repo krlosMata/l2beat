@@ -6,7 +6,8 @@
       "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
       "stablecoin": true,
       "decimals": 18,
-      "coinpaprika_id": "dai-dai"
+      "coinpaprika_id": "dai-dai",
+      "deployed_at_block": 8928158
     },
     "ETH": {
       "address": "0x0",
@@ -62,6 +63,27 @@
       "stablecoin": false,
       "decimals": 18,
       "coinpaprika_id": "link-chainlink"
+    },
+    "SAI": {
+      "address": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+      "stablecoin": true,
+      "decimals": 18,
+      "coinpaprika_id": "sai-single-collateral-dai",
+      "deployed_at_block": 4752008
+    },
+    "CHAI": {
+      "address": "0x06af07097c9eeb7fd685c692751d5C66db49c215",
+      "stablecoin": false,
+      "decimals": 18,
+      "coinpaprika_id": "chai-chai",
+      "deployed_at_block": 9021570
+    },
+    "STAKE": {
+      "address": "0x0Ae055097C6d159879521C384F1D2123D1f195e6",
+      "stablecoin": false,
+      "decimals": 18,
+      "coinpaprika_id": "stake-xdai-stake",
+      "deployed_at_block": 9877421
     }
   },
   "l2s": {
@@ -116,6 +138,20 @@
           "address": "0x6880f6Fd960D1581C2730a451A22EED1081cfD72",
           "deployed_at_block": 11787727,
           "tokens": ["DAI", "USDT", "USDC"]
+        }
+      ]
+    },
+    "xDai": {
+      "bridges": [
+        {
+          "address": "0x4aa42145Aa6Ebf72e164C9bBC74fbD3788045016",
+          "deployed_at_block": 6478422,
+          "tokens": ["DAI", "SAI", "CHAI"]
+        },
+        {
+          "address": "0x88ad09518695c6c3712AC10a214bE5109a655671",
+          "deployed_at_block": 10590093,
+          "tokens": ["LINK", "STAKE"]
         }
       ]
     }
