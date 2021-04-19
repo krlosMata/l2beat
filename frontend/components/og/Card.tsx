@@ -1,8 +1,8 @@
 import React from 'react'
 import { AreaSeries, GradientDefs, LineSeries, LineSeriesPoint, XYPlot } from 'react-vis'
 
-import styles from './og.module.scss'
 import { Icon } from './Icons'
+import styles from './og.module.scss'
 
 interface Stat {
   name: string

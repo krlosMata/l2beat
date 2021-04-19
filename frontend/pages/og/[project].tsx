@@ -1,7 +1,7 @@
 import millify from 'millify'
 
-import { Card, Props } from '../../components/Card'
 import { THIRTY_DAYS_IN_MILLIS } from '../../components/graphs/Graph'
+import { Card, Props } from '../../components/og/Card'
 import { l2Data } from '../../data'
 import { dateSorter } from '../../utils/dateSorter'
 import { findProjectMetadata } from '../../utils/findProjectMetadata'
