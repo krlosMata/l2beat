@@ -3,6 +3,7 @@ import 'react-vis/dist/style.css'
 
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { getDeploymentURL } from '../utils/getDeploymentUrl'
 
 const TITLE = 'L2Beat - Analytics about Layer 2 scaling solutions'
 const DESCRIPTION =
@@ -21,8 +22,8 @@ function MyApp({ Component, pageProps }: { Component: React.ComponentProps<any>;
 
         <meta property="og:title" content={pageProps.title || TITLE} />
         <meta property="og:description" content={pageProps.description || DESCRIPTION} />
-        <meta property="og:image" content={`https://l2beat.com/og/${pageProps.project || 'overview'}.png`} />
-        <meta property="og:url" content={`https://l2beat.com${router.asPath}`} />
+        <meta property="og:image" content={`${getDeploymentURL()}/og/${pageProps.project || 'overview'}.png`} />
+        <meta property="og:url" content={`${getDeploymentURL()}${router.asPath}`} />
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta property="og:site_name" content={pageProps.title || TITLE} />
