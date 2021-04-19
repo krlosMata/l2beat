@@ -3,6 +3,7 @@ import 'react-vis/dist/style.css'
 
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+
 import { getDeploymentURL } from '../utils/getDeploymentUrl'
 
 const TITLE = 'L2Beat - Analytics about Layer 2 scaling solutions'
